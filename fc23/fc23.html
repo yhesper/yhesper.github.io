@@ -27,7 +27,7 @@
 .top-left {
   /* position: absolute; */
   margin-top: -20px;
-  float: right; width: 45%;
+  float: right; width: 40%;
   /* left: 500px; */
 }
 
@@ -57,7 +57,7 @@
 </style>
 </head>
 
-<div style="margin-top:20;margin-left:100;margin-right:100;margin-bottom: 100;
+<div style="margin-top:20;margin-left:110;margin-right:110;margin-bottom: 100;
     background-color:#ffffffff;padding:50px;color:rgb(57, 58, 58);padding-top:50px; padding-left: 100px; padding-right: 100px;">
     <h1 style="font-family: 'Roboto Condensed';font-weight: 700; font-size: 40px;">Fluid Cohomology</h1>
     <p style="font-family: 'Roboto';font-weight:300; font-size: 16px;margin-top:-15px;line-height: 1.5;">
@@ -69,13 +69,13 @@
       <br>
       SIGGRAPH 2023
     </p>
-    <img src="teaser2.png" alt="teaser" width="800" class="center">
+    <img src="teaser2.png" alt="teaser" width=100% class="center">
     <!-- abstract -->
   <br>
   <br>
   <h2 style="font-family: 'Roboto Condensed';font-weight: 700;">Abstract</h2>
 
-    <p style="font-family: 'Roboto';font-weight:300; font-size: 16px; max-width: 800px;text-align: justify;line-height: 1.5;">
+    <p style="font-family: 'Roboto';font-weight:300; font-size: 16px; text-align: justify;line-height: 1.5;">
       The vorticity-streamfunction formulation for incompressible inviscid fluids is the basis for many fluid simulation methods in computer graphics, including vortex methods, streamfunction solvers, spectral methods, and Monte Carlo methods. We point out that current setups in the vorticity-streamfunction formulation are insufficient at simulating fluids on general non-simply-connected domains. This issue is critical in practice, as obstacles, periodic boundaries, and nonzero genus can all make the fluid domain multiply connected. These scenarios introduce nontrivial cohomology components to the flow in the form of harmonic fields. The dynamics of these harmonic fields have been previously overlooked. In this paper, we derive the missing equations of motion for the fluid cohomology components. We elucidate the physical laws associated with the new equations, and show their importance in reproducing physically correct behaviors of fluid flows on domains with general topology.
     </p>
     <br>
