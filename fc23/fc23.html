@@ -1,0 +1,100 @@
+
+<head>
+  <meta charset="utf-8">
+  <title>Fluid Cohomology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href=https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap rel='stylesheet'>
+  <style>
+    a:link, a:visited {  
+      color: rgb(57, 58, 58);
+      text-decoration:none;
+      /* background-color: rgb(255, 227, 227); */
+    }
+    .container {
+  position: relative;
+  color: rgb(57, 58, 58);
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: px;
+  left: 0px;
+  max-width: 400px;text-align: justify;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: -22px;
+  left: 500px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  max-width: 370px;text-align: justify;line-height: 1.5;
+  /* font-family: 'Roboto';font-weight:300; font-size: 16px; */
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+
+<div style="margin-top:20;margin-left:100;margin-right:100;margin-bottom: 50;
+    background-color:#ffffffff;padding:50px;color:rgb(57, 58, 58);padding-top:50px; padding-left: 100px; padding-right: 100px;">
+    <h1 style="font-family: 'Roboto Condensed';font-weight: 700; font-size: 40px;">Fluid Cohomology</h1>
+    <p style="font-family: 'Roboto';font-weight:300; font-size: 16px;margin-top:-15px;line-height: 1.5;">
+      <a href="yhesper.github.io"><u>Hang Yin</u></a>, 
+      <a href="https://sinabiz.github.io/"><u>Mohammad Sina Nabizadeh</u></a>, 
+      <a href="https://acsweb.ucsd.edu/~bwu/"><u>Baichuan Wu</u></a>, 
+      <a href="https://stephaniewang.page/"><u>Stephanie Wang</u></a>, 
+      <a href="https://cseweb.ucsd.edu/~alchern/"><u>Albert Chern</u></a>
+      <br>
+      SIGGRAPH 2023
+    </p>
+    <img src="teaser2.png" alt="teaser" width="800" class="center">
+    <!-- abstract -->
+  <br>
+  <br>
+  <h2 style="font-family: 'Roboto Condensed';font-weight: 700;">Abstract</h2>
+
+    <p style="font-family: 'Roboto';font-weight:300; font-size: 16px; max-width: 800px;text-align: justify;line-height: 1.5;">
+      The vorticity-streamfunction formulation for incompressible inviscid fluids is the basis for many fluid simulation methods in computer graphics, including vortex methods, streamfunction solvers, spectral methods, and Monte Carlo methods. We point out that current setups in the vorticity-streamfunction formulation are insufficient at simulating fluids on general non-simply-connected domains. This issue is critical in practice, as obstacles, periodic boundaries, and nonzero genus can all make the fluid domain multiply connected. These scenarios introduce nontrivial cohomology components to the flow in the form of harmonic fields. The dynamics of these harmonic fields have been previously overlooked. In this paper, we derive the missing equations of motion for the fluid cohomology components. We elucidate the physical laws associated with the new equations, and show their importance in reproducing physically correct behaviors of fluid flows on domains with general topology.
+    </p>
+    <br>
+    <div class="container">
+      <img src="conserved.png" alt="Snow" style="width:390px;">
+      <div class="top-left">
+        <h2 style="font-family: 'Roboto Condensed';font-weight: 700;">Links and materials</h2>
+        <p style="font-family: 'Roboto';font-weight:300; font-size: 18px; max-width: 800px;">
+          <a href="Fluid_Cohomology_Final_final.pdf" target="_blank"><img src="svg/file-search.svg"  class=icon style="width:10%">  Paper</a>
+          <br>
+          <br>
+          <a href="code.zip" target="_blank"><img src="svg/save.svg"  class=icon style="width:10%"> Codes (Houdini and C++)</a>
+          <br>
+          <br>
+          <a href="https://doi.org/10.1145/3592402" target="_blank"><img src="svg/link.svg"  class=icon style="width:10%"> DOI</a>
+        </p>
+      </div>
+      <div class="bottom-left">
+        <p style="font-family: 'Roboto';font-weight:300; font-size: 14px;line-height: 1.5;">
+        Cross-sectional fluxes, evolve precisely at the rate at which a vortex line cuts through a harmonic streamline.</p>
+      </div>
+    </div>
+</div>
