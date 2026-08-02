@@ -1,39 +1,53 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hang"Hesper"Yin</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link href=https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="bunny_bob_better.png">
+  <link href="style.css" rel="stylesheet">
   <style>
-    a:link, a:visited {  
-      color: rgb(57, 58, 58);
-      -webkit-text-decoration-color: rgb(255, 163, 163); /* safari still uses vendor prefix */
-      text-decoration-color: rgb(255, 163, 163);
-      /* background-color: rgb(255, 227, 227); */
-      font-weight: 400;
-    }
     .container {
-    position: relative;
-    clear:both;
+      position: relative;
+      clear: both;
     }
 
+    /* Top left text */
+    .top-left {
+      margin-top: -20px;
+      float: left;
+      width: 70%;
+      clear: left;
+    }
 
-/* Top left text */
-.top-left {
-  /* position: absolute; */
-  margin-top: -20px;
-  float: left; width: 70%;
-  /* left: 500px; */
-  clear: left;
-}
-
-
-</style>
+    .entry {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .entry p {
+      margin: 0;
+    }
+    .entry-thumb {
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .entry-thumb-logo {
+      object-fit: contain;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+  </style>
 </head>
+<body>
 
-<div style="margin-top:50;margin-left:100;margin-right:100;margin-bottom: 50;
-    background-color:rgba(255, 255, 255);padding:50px;color:rgb(57, 58, 58);padding-top:50px; padding-left: 100px; padding-right: 100px;">
+<div class="page-wrap" style="margin:50px 100px;background-color:rgba(255, 255, 255);padding:50px;color:rgb(57, 58, 58);padding-top:50px; padding-left: 100px; padding-right: 100px;">
     <!-- <h1 style="font-family: 'Roboto';font-weight: 300;color:rgb(243, 115, 115)">Hang "Hesper" Yin</h1> -->
     <div style="font-family: 'Roboto Condensed';font-weight:400;position:relative;top:-40px; text-align: right; right:-80px;margin-bottom: -40px;font-size:20px;">
       <a href="contacts.html" style="color:rgb(57, 58, 58);text-decoration: none;">Contacts</a>
@@ -101,63 +115,86 @@
       <br>
     <h2 style="font-family: 'Roboto';font-weight: 300;">Publications</h2>
 
-    <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;line-height: 1.5;">
-      <a href="https://cunchengzhu.github.io/project_pages/ViscousVortex2025.html" style="background-color: rgb(255, 227, 227)">Viscous Vortex Dynamics on Surfaces</a>
-      <br>
-      Cuncheng Zhu<sup>†</sup>, <a style="font-weight: 400;">Hang Yin</a><sup>†</sup>, Albert Chern &nbsp;&nbsp;&nbsp;<small><small><sup>†</sup> Equal contribution</small></small> 
-      <br>
-      ACM Transactions on Graphics (SIGGRAPH Asia 2025)
-    </p>
+    <div class="entry">
+      <img src="media/vv.png" alt="" class="entry-thumb">
+      <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;line-height: 1.5;">
+        <a href="https://cunchengzhu.github.io/project_pages/ViscousVortex2025.html" style="background-color: rgb(255, 227, 227)">Viscous Vortex Dynamics on Surfaces</a>
+        <br>
+        Cuncheng Zhu<sup>†</sup>, <a style="font-weight: 400;">Hang Yin</a><sup>†</sup>, Albert Chern &nbsp;&nbsp;&nbsp;<small><small><sup>†</sup> Equal contribution</small></small>
+        <br>
+        ACM Transactions on Graphics (SIGGRAPH Asia 2025)
+      </p>
+    </div>
 
+    <div class="entry">
+      <img src="media/coflip.png" alt="" class="entry-thumb">
+      <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;line-height: 1.5;">
+        <a href="https://cseweb.ucsd.edu/~viscomp/projects/SIGA24COFLIP/" style="background-color: rgb(255, 227, 227)">Fluid Implicit Particles on Coadjoint Orbits</a>
+        <br>
+        Mohammad Sina Nabizadeh, Ritoban Roy-Chowdhury, <a style="font-weight: 400;">Hang Yin</a>, Ravi Ramamoorthi, Albert Chern
+        <br>
+        ACM Transactions on Graphics (SIGGRAPH Asia 2024)
+        <a style="color:rgb(244, 73, 73);font-weight:400;font-size: 16px;"><i>Best Paper (Honorable Mention)</i></a>
+      </p>
+    </div>
 
-    <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;line-height: 1.5;">
-      <a href="https://cseweb.ucsd.edu/~viscomp/projects/SIGA24COFLIP/" style="background-color: rgb(255, 227, 227)">Fluid Implicit Particles on Coadjoint Orbits</a>
-      <br>
-      Mohammad Sina Nabizadeh, Ritoban Roy-Chowdhury, <a style="font-weight: 400;">Hang Yin</a>, Ravi Ramamoorthi, Albert Chern
-      <br>
-      ACM Transactions on Graphics (SIGGRAPH Asia 2024)
-      <a style="color:rgb(244, 73, 73);font-weight:400;font-size: 16px;"><i>Best Paper (Honorable Mention)</i></a>
-    </p>
-
-    <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;line-height: 1.5;">
-      <a href="fc23/fc23.html" style="background-color: rgb(255, 227, 227)">Fluid Cohomology</a>
-      <br>
-      <a style="font-weight: 400;">Hang Yin</a>, Mohammad Sina Nabizadeh, Baichuan Wu, Stephanie Wang, Albert Chern
-      <br>
-      ACM Transactions on Graphics (SIGGRAPH 2023)
-    </p>
-    <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px; line-height: 1.5;">
-      <a href="https://augmented-perception.org/publications/2022-DiminishedReality.html" style="background-color: rgb(255, 227, 227)">Towards Understanding Diminished Reality</a>
-      <br>
-      Yi Fei Cheng, <a style="font-weight: 400;">Hang Yin</a>, Yukang Yan, Jan Gugenheimer, David Lindlbauer
-      <br>
-      ACM SIGCHI 2022
-    </p>
+    <div class="entry">
+      <img src="media/bunnybob3.png" alt="" class="entry-thumb">
+      <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;line-height: 1.5;">
+        <a href="fc23/fc23.html" style="background-color: rgb(255, 227, 227)">Fluid Cohomology</a>
+        <br>
+        <a style="font-weight: 400;">Hang Yin</a>, Mohammad Sina Nabizadeh, Baichuan Wu, Stephanie Wang, Albert Chern
+        <br>
+        ACM Transactions on Graphics (SIGGRAPH 2023)
+      </p>
+    </div>
+    <div class="entry">
+      <img src="media/dr.png" alt="" class="entry-thumb">
+      <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px; line-height: 1.5;">
+        <a href="https://augmented-perception.org/publications/2022-DiminishedReality.html" style="background-color: rgb(255, 227, 227)">Towards Understanding Diminished Reality</a>
+        <br>
+        Yi Fei Cheng, <a style="font-weight: 400;">Hang Yin</a>, Yukang Yan, Jan Gugenheimer, David Lindlbauer
+        <br>
+        ACM SIGCHI 2022
+      </p>
+    </div>
     </div>
     <!-- Internships -->
     <div class="container">
       <br>
       <h2 style="font-family: 'Roboto';font-weight: 300;">Experiences</h2>
-      <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;">
-      <a style="font-weight:400">Pixar Animation Studios</a><br>
-        Mentor: Fernando de Goes <br>
-        Worked on power diagrams.
-      </p>
-      <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;">
-      <a style="font-weight:400">Adobe Research</a><br>
-        Mentors: Jeremie Dumas, James Zhou, and Danny Kaufman <br>
-        Worked on dynamic tetrahedral mesh library in C++.
-      </p>
-      <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;">
-      <a style="font-weight:400">Taichi Graphics</a><br>
-        Mentor: Tiantian Liu<br>
-        Check out the demo on <a href="fc23/fc23.html">Taichi Lang's website</a> :)
-      </p>
-      <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;">
-      <a style="font-weight:400">EPFL Geometric Computing Lab</a><br>
-        Mentors: Uday Kusupati, Quentin Becker, Mark Pauly<br>
-        Worked on interactive surface paramatrization.
-      </p>
+      <div class="entry">
+        <img src="media/Pixar-Logo.png" alt="" class="entry-thumb entry-thumb-logo">
+        <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;">
+        <a style="font-weight:400">Pixar Animation Studios</a><br>
+          Mentor: Fernando de Goes <br>
+          Worked on power diagrams.
+        </p>
+      </div>
+      <div class="entry">
+        <img src="media/adobe-logo.png" alt="" class="entry-thumb entry-thumb-logo">
+        <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;">
+        <a style="font-weight:400">Adobe Research</a><br>
+          Mentors: Jeremie Dumas, James Zhou, and Danny Kaufman <br>
+          Worked on dynamic tetrahedral mesh library in C++.
+        </p>
+      </div>
+      <div class="entry">
+        <img src="media/taichi-logo.png" alt="" class="entry-thumb entry-thumb-logo">
+        <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;">
+        <a style="font-weight:400">Taichi Graphics</a><br>
+          Mentor: Tiantian Liu<br>
+          Worked on simulation algorithms using the Taichi programming language.
+        </p>
+      </div>
+      <div class="entry">
+        <img src="media/epfl-logo.png" alt="" class="entry-thumb entry-thumb-logo">
+        <p style="font-family: 'Roboto Condensed';font-weight:300; font-size: 18px;">
+        <a style="font-weight:400">EPFL Geometric Computing Lab</a><br>
+          Mentors: Uday Kusupati, Quentin Becker, Mark Pauly<br>
+          Worked on interactive surface paramatrization.
+        </p>
+      </div>
     </div>
     <!-- Invited talks -->
     <div class="container">
@@ -211,3 +248,5 @@
       </p>
     </div>
 </div>
+</body>
+</html>

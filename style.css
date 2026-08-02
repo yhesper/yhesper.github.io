@@ -1,0 +1,31 @@
+/* Shared base styles for yhesper.github.io.
+   Page-specific layout classes (.container, .top-left, etc.) stay in each
+   page's own <style> block since their float/width values differ per page. */
+
+body {
+  margin: 0;
+}
+
+a:link, a:visited {
+  color: rgb(57, 58, 58);
+  -webkit-text-decoration-color: rgb(255, 163, 163); /* safari still uses vendor prefix */
+  text-decoration-color: rgb(255, 163, 163);
+  font-weight: 400;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+/* Mobile fallback: the fixed 100px side padding and floated columns used on
+   desktop overflow small screens, so relax them below 700px. Desktop is untouched. */
+@media (max-width: 700px) {
+  .page-wrap {
+    margin: 0 !important;
+    padding: 24px !important;
+  }
+  .top-left {
+    float: none !important;
+    width: 100% !important;
+  }
+}
